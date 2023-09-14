@@ -1,0 +1,65 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.box-tendencias{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid v.$grisClaro;
+    box-shadow: 10px 11px 18px -14px rgba(0,0,0,0.44);
+    padding: 2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: v.$grisClaro;
+
+    @include m.tablet{ 
+        width: 100%;
+    }
+
+    img{
+        height: 25rem;
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 1rem;
+        transition: transform 0.8s;
+
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+
+    .cat{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: v.$grisOscuro;
+        margin-bottom: 0;
+
+        &:hover{
+            color: v.$primario;
+        }
+    }
+
+    .button{
+        @include m.boton(v.$primario, v.$blanco);
+    }
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    @include m.grid(2, 2rem);
+
+    .texto{
+        font-size: 2rem;
+        color: v.$negro;
+    }
+    .price{
+        display: flex;
+        justify-content: flex-end;
+
+        span{
+            font-size: 2.5rem;
+            color:v.$grisOscuro;   
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    
+    padding: v.$separacion 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 65rem;
+    
+    @include m.desktop{ 
+        min-height: 70rem;
+        background-size: 100% 100%;
+    }
+    
+    
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .7;
+
+    }
+
+    .header-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 10rem;
+        text-align: center;
+
+        @include m.tablet{ 
+            margin-top: 20rem;
+        }
+
+        .texto{
+            color: v.$blanco;
+            margin: 0;
+            font-size: 2rem;
+
+            span{
+                font-size: 3rem;
+                color: v.$primario;
+
+
+
+            }
+
+        }
+
+        h1{
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            
+           
+        }
+
+    }
+    
+}
+
+// Header de cada pagina
+.header-inicio{
+    background-image: url(../img/header-2-min.jpg);
+}
+.heaeder-interno{
+    height: 20rem;
+    background-color: v.$negro;
+}

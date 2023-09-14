@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto{
+    padding: v.$separacion 0;
+
+    .contacto-grid{
+        
+        @include m.tablet{ 
+            @include m.grid(2, 2rem);
+            place-items: center;
+           
+        }
+
+        .imagen{
+           margin: 0 auto; 
+           
+           img{
+            width: 70rem;
+           }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tiendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    h3,p{
+        text-align: center;
+    }
+
+    .heading-title{
+        color: v.$negro;
+        margin: 2rem 0 0 0;
+    }
+    .texto{
+        margin-bottom: 3rem;
+    }
+
+    .tiendas-grid{
+        @include m.grid(2, 2rem); 
+    }
+
+    .tiendas-enlace{
+        width: 15rem;
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        @include m.desktop{ 
+            width: auto;
+        }
+    }
+}

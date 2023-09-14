@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.whatsapp{
+    padding: v.$separacion 0;
+
+    .whatsap-content{
+        background-color: v.$grisClaro;
+        padding: 5rem;
+        border-radius: 1rem;
+
+        .whatsapp-info{
+
+            h3{
+                text-align: center;
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+            }
+
+            a{
+                text-transform: uppercase;
+                @include m.boton(#3eac0c, v.$blanco);
+
+                @include m.tablet{ 
+                    width: 30rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .whatsapp-grid{
+            margin-top: 5rem;
+
+            @include m.tablet{ 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 3rem;
+            }
+            .lista{
+                line-height: 2;
+            }
+
+            .imagen{
+
+                img{
+                    width: 30rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

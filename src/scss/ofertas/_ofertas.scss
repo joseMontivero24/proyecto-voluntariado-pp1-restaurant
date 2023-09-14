@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.ofertas{
+    background-color: v.$blanco;
+    padding: v.$separacion 0 0 0;
+
+    @include m.desktop{ 
+        padding: v.$separacion 0;
+    }
+
+    .home-slider{
+        margin-top: 5rem;
+    }
+    
+}
+
+.swiper-wrapper{
+    
+    .slide{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap:1.5rem;
+        align-items: center;
+        margin-bottom: 4rem; 
+
+        .content{
+            flex:1 1 40rem;
+            text-align: center;
+            span{
+                font-size: 2.5rem;
+                color: v.$grisOscuro;
+            }
+
+            h3{
+                font-size: 5rem;
+                text-transform: capitalize;
+                color: v.$negro;
+                padding:1rem 0;  
+            }
+
+            a{
+                width: 85%;
+                background-color: v.$primario;
+                font-size: 2rem;
+                padding: 1.2rem 3rem;
+                border-radius: 1rem;
+                font-weight: 700;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                color: v.$blanco;
+                text-decoration: none;
+                transition: background-color .3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #b48802;
+                }
+            
+               @include m.tablet{ 
+                    width: 50%;
+               }  
+            }
+
+            
+        }
+
+        .imagen{
+            flex:1 1 40rem;
+
+            img{
+                margin: 0 auto;
+                width: 75%;
+
+                @include m.tablet{ 
+                    width: 50rem;
+                }
+
+                @include m.desktop{ 
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+
+
+// Estilos para el botón de borrar comida
+.borrar-comida {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: v.$blanco;
+  font-weight: bold;
+}
+
+.columns{
+
+  ul{
+    padding-left: 1rem;
+  }
+}
+
+// Estilos para el contenedor del carrito
+.submenu {
+    position: relative;
+    list-style: none;
+    margin: 0px;
+
+  &:hover {
+    .carrito-shoopin {
+      display: block;
+      position: absolute;
+      left: -1rem;
+      right: 0;
+      top: 100%;
+      z-index: 1;
+      background-color: v.$grisClaro;
+      padding: 2rem;
+      min-height: 40rem;
+      min-width: 37rem;
+
+      @include m.tablet{ 
+        min-width: 45rem;
+        left: -35rem;
+      }
+    }
+  }
+
+  .icon-carrito{
+    
+    
+    i{
+        font-size: 2.5rem;
+        color:v.$blanco;
+        cursor: pointer;
+        
+    }
+  
+  }
+  
+
+  .carrito-shoopin {
+    display: none;
+   
+
+    .lista-card {
+      margin-bottom: 2rem;
+      
+      .padre {
+        .padre-hijo {
+          color: v.$negro;
+          min-width: 35rem;
+          height: 1.5rem;
+          display: flex;
+          padding: 2rem 0;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 1.5rem;
+          border-bottom: 1px solid #1f1f1f;
+          
+
+          th,
+          td {
+            
+            font-size: 1.5rem;
+            padding: 2rem 1.5rem;
+            // text-align: left;
+            // border-bottom: 1px solid #1f1f1f;
+
+            &:first-child {
+              padding-left: 0;
+            }
+
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+
+          
+        }
+
+        
+      }
+      tbody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+        
+        td{
+          text-align: end;
+          width: 10rem;
+          
+
+        }
+      }
+     
+    }
+
+    .button {
+      @include m.boton(v.$primario, v.$blanco);
+    }
+  }
+}
+
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.agregar-carrito {
+  margin: 10px 0;
+}

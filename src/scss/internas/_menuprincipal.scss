@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu-principal{
+    padding: v.$separacion 0;
+
+    .box-container{
+        
+        @include m.tablet{ 
+            @include m.grid(2, 2rem);
+
+        }
+        @include m.desktop{ 
+            @include m.grid(3, 2rem);
+            padding: 5rem;
+        }
+    }
+}
+

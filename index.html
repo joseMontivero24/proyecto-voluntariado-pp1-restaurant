@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Restaurante la Cabaña</title>
+   <link rel="shortcut icon" href="build/img/favicon.png" type="image/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="build/css/app.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <script src="https://kit.fontawesome.com/e78c345f36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <header class="header header-inicio">
+      <nav class="menu">
+
+
+         <div class="prueba">
+            <div class="menu-content">
+
+               <ul class="menu-list">
+                  <div class="icon cancel-btn">
+                     <i class="fas fa-times"></i>
+                  </div>
+                  <li class="menu-list-item"><a class="activo" href="index.html">Inicio</a></li>
+                  <li class="menu-list-item"><a href="nosotros.html">Nosotros</a></li>
+                  <li class="menu-list-item"><a href="menu.html">Menú</a></li>
+                  <li class="menu-list-item"><a href="whatsapp.html">WhatsApp</a></li>
+                  <li class="menu-list-item"><a href="contacto.html">Contacto</a></li>
+               </ul>
+
+               <div class="icon menu-btn">
+                  <i class="fas fa-bars menu-bars"></i>
+               </div>
+
+            </div>
+         </div>
+
+
+
+         <!-- inicio del html para el carrito -->
+         <div class="icons two columns">
+            <ul>
+               <li class="submenu">
+                  <a class="icon-carrito" href="#"><i class="fas fa-shopping-cart" id="img-carrito"></i></a>
+
+                  <div id="carrito" class="carrito-shoopin">
+                     <table id="lista-carrito" class="u-full-width lista-card">
+                        <thead class="padre">
+                           <tr class="padre-hijo">
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th>Cantidad</th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tbody></tbody>
+                     </table>
+                     <a href="#" id="vaciar-carrito" class="btn-5 button u-full-width borrar-comida">Vaciar carrito</a>
+                  </div>
+               </li>
+            </ul>
+
+
+         </div>
+         <!-- final del html para el carrito -->
+
+
+
+      </nav>
+
+      <div class="header-title">
+         <p class="texto">Hay descuentos de hasta el <span>35%</span></p>
+
+         <h1>disfruta de los mejores platillos</h1>
+
+         <p class="texto">Estamos disponibles las 24hrs</p>
+      </div>
+   </header>
+
+   <section class="ofertas">
+      <div class="swiper home-slider contenedor">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Ofertas imperdibles</span>
+                  <h3>Deliciosa pizza</h3>
+                  <a href="menu.html" class="btn">Ver menú</a>
+               </div>
+               <div class="imagen">
+                  <img src="build/img/pizza-2.png" alt="imagen pizza" loading="lazy" />
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Ofertas imperdibles</span>
+                  <h3>Super Pancho</h3>
+                  <a href="menu.html" class="btn">Ver menú</a>
+               </div>
+               <div class="imagen">
+                  <img src="build/img/comida-4.png" alt="imagen hamburgesa" loading="lazy" />
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Ofertas imperdibles</span>
+                  <h3>Pollo Asado</h3>
+                  <a href="menu.html" class="btn">Ver menú</a>
+               </div>
+               <div class="imagen">
+                  <img src="build/img/comida-1.png" alt="imagen pollo" loading="lazy" />
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <section class="servicios">
+
+      <h2 class="title">servicios disponibles</h2>
+
+      <div class="box-container contenedor">
+
+         <div href="#" class="box">
+            <img src="build/img/servicio1.png" alt="img-catalogo" loading="lazy">
+            <h3>Comida Rápida</h3>
+         </div>
+
+         <div href="#" class="box">
+            <img src="build/img/servicio2.png" alt="img-catalogo" loading="lazy">
+            <h3>Platos Principales</h3>
+         </div>
+
+         <div href="#" class="box">
+            <img src="build/img/servicio3.png" alt="img-catalogo" loading="lazy">
+            <h3>Refrescos</h3>
+         </div>
+
+         <div href="#" class="box">
+            <img src="build/img/servicio4.png" alt="img-catalogo" loading="lazy">
+            <h3>Postres</h3>
+         </div>
+
+      </div>
+   </section>
+
+   <main class="tendencia" id="lista-comida">
+      <h2 class="title">platillos tendencia</h2>
+
+      <div class="box-container contenedor">
+
+         <div class="box-tendencias">
+
+            <img src="build/img/comida-1.png" alt="comida 1" loading="lazy">
+            <h5 class="cat">Comida rapida</h5>
+
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Comida 1</h4>
+               </div>
+               <div class="price texto"><span>$1.200</span></div>
+
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="1">Agregar al Carrito</a>
+         </div>
+
+         <div class="box-tendencias">
+
+            <img src="build/img/comida-3.png" alt="comida 2" loading="lazy">
+            <h5 class="cat">Platos</h5>
+
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Comida 2</h4>
+               </div>
+               <div class="price texto"><span>$1.200</span></div>
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+         </div>
+
+         <div class="box-tendencias">
+
+            <img src="build/img/comida-2.png" alt="comida 3" loading="lazy">
+            <h5 class="cat">Comida rapida</h5>
+
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Comida</h4>
+               </div>
+               <div class="price texto"><span>$1.200</span></div>
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="3">Agregar al Carrito</a>
+         </div>
+
+         <div class="box-tendencias">
+
+            <img src="build/img/pizza-2.png" alt="bebidas" loading="lazy">
+            <h5 class="cat">Comida Rapida</h5>
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Comida</h4>
+               </div>
+
+               <div class="price texto"><span>$1.200</span></div>
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="4">Agregar al Carrito</a>
+         </div>
+
+         <div class="box-tendencias">
+
+            <img src="build/img/trago-1.png" alt="bebidas" loading="lazy">
+            <h5 class="cat">Refrescos</h5>
+
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Bebidas</h4>
+               </div>
+               <div class="price texto"><span>$1.200</span></div>
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="5">Agregar al Carrito</a>
+         </div>
+
+         <div class="box-tendencias">
+
+            <img src="build/img/postre 3.png" alt="img-comida" loading="lazy">
+            <h5 class="cat">Postre</h5>
+
+            <div class="flex">
+               <div class="name texto">
+                  <h4>Helado</h4>
+               </div>
+               <div class="price texto"><span>$1.200</span></div>
+            </div>
+            <a href="#" class="btn button-primary button input agregar-carrito" data-id="6">Agregar al Carrito</a>
+         </div>
+
+      </div>
+   </main>
+
+   <section class="pagos">
+      <h3>Medios de pago</h3>
+
+      <div class="pagos-grid contenedor">
+         <div class="pagos-box">
+            <img src="build/img/medio-pago1.png" alt="medio de pago">
+         </div>
+
+         <div class="pagos-box">
+            <img src="build/img/medio-pago2.png" alt="medio de pago">
+         </div>
+
+         <div class="pagos-box">
+            <img src="build/img/medio-pago3.png" alt="medio de pago">
+         </div>
+
+         <div class="pagos-box">
+            <img src="build/img/medio-pago4.png" alt="medio de pago">
+         </div>
+      </div>
+   </section>
+
+   <section class="ubicacion">
+      <h2 class="title">Nuestra Ubicación</h2>
+
+      <div class="ubicacion-grid contenedor">
+         <div class="ubicacion-box">
+            <img src="build/img/icon_ubicacion1.png" alt="email icono" loading="lazy">
+            <h3>Nuestro email</h3>
+            <a href="#">correo@correo.com</a>
+            <a href="#">correo@correo.com</a>
+         </div>
+
+         <div class="ubicacion-box">
+            <img src="build/img/icon_ubicacion2.png" alt="clock-icon">
+            <h3>Horarios</h3>
+            <p>08:00 a 00:10 </p>
+            <p>Se atiende las 24/H</p>
+         </div>
+
+         <div class="ubicacion-box">
+            <img src="build/img/icon_ubicacion3.png" alt="ubicacion" loading="lazy">
+            <h3>Dirección</h3>
+            <a href="#">Argenina, Catamarca </a>
+            <p>1232-6656 norte</p>
+         </div>
+
+         <div class="ubicacion-box">
+            <img src="build/img/icon_ubicacion4.png" alt="celular" loading="lazy">
+            <h3>Nos llamas</h3>
+            <a href="#">3837-691633</a>
+            <a href="#">3837-491420</a>
+         </div>
+      </div>
+   </section>
+
+   <section class="descargar">
+      <div class="descargar-grid contenedor">
+            <div class="imagen">
+               <img src="build/img/app-descargar.png" alt="img de app">
+            </div>
+
+            <div class="tiendas">
+               <h3 class="heading-title">Descarga la App</h3>
+               <p class="texto">Disponible para Android y iOS</p>
+
+               <div class="tiendas-grid">
+                     <a href="#" class="tiendas-enlace">
+                        <img src="build/img/tienda-apple.svg" alt="img apple">
+                     </a>
+
+                     <a href="#" class="tiendas-enlace">
+                        <img src="build/img/tienda-android.svg" alt="img android">
+                     </a>
+               </div>
+            </div>
+      </div>
+  </section>
+
+
+   <footer class="footer">
+      <div class="footer-grid contenedor">
+         <div class="footer-box footer-img">
+            <img src="build/img/logo_restaurant.png" alt="logo restaurant">
+         </div>
+
+         <div class="footer-box">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menú</a>
+            <a href="info.html">Info</a>
+            <a href="contacto.html">Contacto</a>
+         </div>
+
+         <div class="footer-box">
+            <h3>Sitio</h3>
+            <a href="#">Blog</a>
+            <a href="#">Políticas de privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Conviertete en socio</a>
+            <a href="#">Mapa del Sitio</a>
+         </div>
+
+         <div class="footer-box">
+            <h3>Contacto</h3>
+            <a href="tel:+">3837-691637</a>
+            <a href="tel:+">3837-696653</a>
+            <a href="mailto:">lacabaña2023@gmail.com</a>
+         </div>
+
+         <div class="footer-box">
+            <h3>Síguenos</h3>
+
+            <div class="redes">
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-x-twitter"></i>
+            </div>
+         </div>
+      </div>
+
+      <div class="copyright">
+         &copy; Todos los derechos reservados - 2023 / Desarrollado por Jose Montivero - Desarrollador FullStack
+      </div>
+   </footer>
+
+
+   <script src="js/main.js"></script>
+   <script src="js/carrito.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".home-slider", {
+         loop: true,
+         grabCursor: true,
+         effect: "flip",
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+      });
+   </script>
+</body>
+
+</html>

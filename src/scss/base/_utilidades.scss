@@ -1,0 +1,18 @@
+@use 'variables' as v; 
+
+.text-center {
+    text-align: center;
+}
+
+// .bg-primario {
+//     background-color: v.$primario;
+// }
+.title{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color:v.$negro;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}

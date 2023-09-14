@@ -1,0 +1,156 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros{
+    padding: v.$separacion 0;
+
+
+}
+
+.nosotros-grid{
+    margin-top: 5rem;
+
+    @include m.tablet{ 
+        @include m.grid(2, 2rem);
+    }
+
+    .nosotros-img{
+
+        img{
+            width: 35rem;
+            margin: 0 auto;
+
+            @include m.tablet{ 
+                width: 45rem;
+            }
+        }
+    }
+
+    .nosotros-info{
+        padding: 2rem 5rem 5rem 5rem;
+
+        @include m.tablet{ 
+            padding: 2rem 5rem 5rem 0;
+        }
+
+        h3{
+            text-align: center;
+            color: v.$negro;
+            font-weight: bold;
+        }
+
+        p{
+            line-height: 1.5;
+            text-align: start;
+            margin-bottom: 4rem
+
+        }
+
+        a{
+            @include m.boton(v.$primario, v.$blanco);
+        }
+    }
+}
+
+
+// EL por que elegirnos en el archivo nosotros
+
+.elegirnos{
+    padding: v.$separacion 0;
+
+    .title{
+        margin-bottom: 5rem;
+    }
+
+    .elegirnos-grid{
+        
+
+        @include m.tablet{ 
+            @include m.grid(3, 2rem);
+        }
+        .elegirnos-box{
+            margin-bottom: 2rem;
+            text-align: center;
+            padding:2rem;
+            border: 2px solid v.$grisClaro;
+            box-shadow:  10px 11px 18px -14px rgba(0,0,0,0.44);
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+
+            @include m.tablet{ 
+                margin-bottom: 0;
+            }
+            img{
+                height: 15rem;
+                margin-bottom: 1rem;
+                width: 100%;
+                object-fit: contain; 
+            }
+
+            h3{
+                font-size: 2rem;
+                color: v.$negro;
+                margin: 1rem 0;
+                text-transform: capitalize;
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: v.$grisOscuro;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+// Estils para "opiniones del cliente"
+
+.testimoniales{
+    padding: v.$separacion 0;
+
+    .title{
+        margin-bottom: 5rem;
+    }
+}
+
+
+.slide-nuevo{
+ 
+    margin-bottom: 4rem;
+    border: 1px solid v.$grisClaro;
+    box-shadow:  10px 11px 18px -14px rgba(0,0,0,0.44);
+    text-align: center;
+    padding: 2rem 0;
+    
+    
+
+    img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        object-fit: cover; 
+        margin: 0 auto;
+    }
+
+    p{
+        padding:1rem 0;
+        line-height: 2;
+        font-size: 1.6rem;
+        color: v.$grisOscuro;
+    }
+    .stars{
+        margin-top: .5rem;
+
+        i{
+            font-size: 1.7rem;
+            color: v.$primario; 
+        }
+    }
+    h3{
+        font-size: 2rem;
+        color: v.$negro;
+        margin-top: 1.5rem; 
+    }
+}

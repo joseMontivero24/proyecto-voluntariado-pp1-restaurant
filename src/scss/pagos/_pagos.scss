@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagos{
+    padding: v.$separacion 0;
+    border-top: 3px solid v.$grisClaro;
+    border-bottom: 3px solid v.$grisClaro;
+    box-shadow: inset -2px -3px 13px 10px rgba(221, 221, 221, 0.49);
+    margin-bottom: 4rem;
+
+    h3{
+        text-align: center;
+        color: v.$negro;
+        margin-bottom: 5rem;
+    }
+
+}
+
+.pagos-grid {
+
+    @include m.tablet{ 
+        @include m.grid(4, 1rem);
+    }
+
+    .pagos-box{
+        margin-bottom: 2rem;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        img{
+            width: 15rem;
+            margin: 0 auto;
+            transition: transform 0.8s;
+
+            &:hover{
+            transform: scale(1.2);
+            }
+        }
+    }
+}
